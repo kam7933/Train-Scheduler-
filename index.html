@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Train System</title>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script  src="https://www.gstatic.com/firebasejs/6.4.2/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#config-web-app -->
+
+     <script  src="https://www.gstatic.com/firebasejs/6.4.2/firebase-auth.js"></script>
+     <script  src="https://www.gstatic.com/firebasejs/6.4.2/firebase-database.js"></script>
+
+     <script  src="https://www.gstatic.com/firebasejs/6.4.2/firebase-firestore.js"></script>
+
+     <script  src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+
+</head>
+<body>
+
+    <h1>Current Train Schedule</h1>
+    <table>
+    <tr>
+        <th>Train Name</th>
+        <th>Destination</th>
+        <th>Frequency (min)</th>
+        <th>Next Arrival</th>
+        <th>Minutes Away</th>
+    </tr>
+    <tr>
+            
+        <td>Trenton Express</td>
+        <td>Trenton</td>
+        <td>25</td>
+        <td>05:35 PM</td>
+        <td>10</td>
+        </tr>
+     <tr>
+         <td>Oregon Trail</td>
+        <td>Salem,Oregon</td>
+        <td>3600</td>
+         <td>01:39 PM</td>
+        <td>1154</td>
+    </tr>
+    <tr>
+        <td>Midnight Carrriage</td>
+         <td>Philadelpha</td>
+        <td>15</td>
+        <td>05:35 PM</td>
+        <td>10</td>
+  </tr>
+ <tr>
+        <td>Sign Sing Carravan</td>
+        <td>Atlanta</td>
+          <td>45</td>
+       <td>05:53 PM</td>
+         <td>28</td>
+    </tr>
+          <tr><td>Boston Bus</td>
+            <td>Boston</td>
+            <td>65</td>
+            <td>05:50 PM</td>
+            <td>25</td>
+  </tr>
+  <tr>
+          <td>California Caravan</td>
+                <td>San Francisco</td>
+                <td>6000</td>
+                <td>01:25 AM</td>
+                <td>4740</td>
+     </tr>
+     <tr>
+          <td>Analben's Train</td>
+            <td>Florida</td>
+            <td>25</td>
+             <td>05:28 PM</td>
+             <td>3</td>
+     </tr>                       
+                </table>
+    <h1>Add Train</h1>
+    <!-- <section>Train Name</section>
+    <section>Destination</section>
+    <section>First Train Time(HH:mm-miltary time)</section>
+    <section>Frequency(min)</section> -->
+   <div>
+    
+        <label for="fname">Train Name</label>
+        <input type="text" id="train-name" name="train-name" placeholder="Your Train Name..">
+    
+        <label for="lname">Destination Name</label>
+        <input type="text" id="destination-name" name="destination-name" placeholder="Your Destinations name..">
+    
+        <label for="lname">First Train </label>
+        <input type="text" id="first-train-name" name="first-train-name" placeholder="Your First Train name..">
+    
+
+        <label for="lname">Frequency</label>
+        <input type="text" id="frequency" name="frequency-name" placeholder="Your Frequency.">
+    
+
+
+        <label for="country">Country</label>
+        <select id="country" name="country">
+          <option value="australia">Australia</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+        </select>
+      <br>
+        <button type="submit"  id="submit" value="Submit" class="nav-marg">Submit</button>
+     
+    </div>
+    <script  src="assets/javascript/app.js"></script>
+    
+</body>
+</html>
